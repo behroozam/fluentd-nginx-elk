@@ -48,6 +48,22 @@ services:
       - elk
     depends_on:
       - elasticsearch
+  
+  nginx:
+    image: nginx
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+    ports: 
+      - "8080:80"
+    networks:
+      - elk
+  
+  fluentd:
+    build: fluentd/
+    volumes:
+      - ./fluentd/fluent.conf:/fluentd/etc/fluent.conf
+    networks:
+      - elk
 
 networks:
 
