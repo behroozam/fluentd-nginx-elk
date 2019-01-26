@@ -1,4 +1,4 @@
-# Elastic stack (ELK) on Docker + fluentd 
+# Elastic stack (ELK) on Docker + fluentd + nginx
 
 [![Join the chat at https://gitter.im/deviantony/docker-elk](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/deviantony/docker-elk?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Elastic Stack version]  git config --global user.name "Your Name"
